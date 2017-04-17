@@ -1,7 +1,7 @@
 # test coverage for  [gulp-svgstore (v6.1.0)](https://github.com/w0rm/gulp-svgstore)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-svgstore.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-svgstore) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-svgstore.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-svgstore)
 #### Combine svg files into one with <symbol> elements
 
-[![NPM](https://nodei.co/npm/gulp-svgstore.png?downloads=true)](https://www.npmjs.com/package/gulp-svgstore)
+[![NPM](https://nodei.co/npm/gulp-svgstore.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-svgstore)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-gulp-svgstore/tree/alpha)|
 |--:|:--|
@@ -9,11 +9,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-gulp-svgstore/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-gulp-svgstore/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-gulp-svgstore/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-gulp-svgstore/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-gulp-svgstore/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-gulp-svgstore/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-gulp-svgstore/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-gulp-svgstore/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-gulp-svgstore/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-gulp-svgstore%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-gulp-svgstore/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-gulp-svgstore/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-gulp-svgstore/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-svgstore/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-gulp-svgstore%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-svgstore/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-gulp-svgstore/build/test-report.html](https://npmtest.github.io/node-npmtest-gulp-svgstore/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-gulp-svgstore/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-gulp-svgstore/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-gulp-svgstore/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-svgstore/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-svgstore/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-svgstore/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-gulp-svgstore/build/screenCapture.npmPackageListing.svg)
 
@@ -27,8 +33,7 @@
 
 {
     "author": {
-        "name": "Andrey Kuzmin",
-        "email": "unsoundscapes@gmail.com"
+        "name": "Andrey Kuzmin"
     },
     "bugs": {
         "url": "https://github.com/w0rm/gulp-svgstore/issues"
@@ -67,13 +72,11 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "unsoundscapes",
-            "email": "unsoundscapes@gmail.com"
+            "name": "unsoundscapes"
         }
     ],
     "name": "gulp-svgstore",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/w0rm/gulp-svgstore.git"
