@@ -1,5 +1,7 @@
-<html lang="en"><head>
-    <title>Code coverage report for node-npmtest-gulp-svgstore/gulp-svgstore/index.js</title>
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node-npmtest-gulp-svgstore/node_modules/gulp-svgstore/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,7 +194,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-gulp-svgstore">npmtest-gulp-svgstore (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-gulp-svgstore/gulp-svgstore/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-gulp-svgstore/node_modules/gulp-svgstore/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">6.67% <small>(5 / 75)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -208,11 +210,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> » <a href="index.html">node-npmtest-gulp-svgstore/gulp-svgstore/</a> » index.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-gulp-svgstore/node_modules/gulp-svgstore/</a> &#187; index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tbody><tr><td class="line-count">1
+<tr><td class="line-count">1
 2
 3
 4
@@ -481,93 +483,93 @@ var path = require('path')
 var gutil = require('gulp-util')
 var Stream = require('stream')
 &nbsp;
-module.exports = <span class="fstat-no" title="function not covered">function (config) {</span>
+module.exports = <span class="fstat-no" title="function not covered" >function (config) {</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  config = config || {}</span>
+<span class="cstat-no" title="statement not covered" >  config = config || {}</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  var namespaces = {}</span>
-<span class="cstat-no" title="statement not covered">  var isEmpty = true</span>
-<span class="cstat-no" title="statement not covered">  var fileName</span>
-<span class="cstat-no" title="statement not covered">  var inlineSvg = config.inlineSvg || false</span>
-<span class="cstat-no" title="statement not covered">  var ids = {}</span>
+<span class="cstat-no" title="statement not covered" >  var namespaces = {}</span>
+<span class="cstat-no" title="statement not covered" >  var isEmpty = true</span>
+<span class="cstat-no" title="statement not covered" >  var fileName</span>
+<span class="cstat-no" title="statement not covered" >  var inlineSvg = config.inlineSvg || false</span>
+<span class="cstat-no" title="statement not covered" >  var ids = {}</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  var resultSvg = '&lt;svg xmlns="http://www.w3.org/2000/svg"&gt;&lt;defs/&gt;&lt;/svg&gt;'</span>
-<span class="cstat-no" title="statement not covered">  if (!inlineSvg) {</span>
-<span class="cstat-no" title="statement not covered">    resultSvg =</span>
+<span class="cstat-no" title="statement not covered" >  var resultSvg = '&lt;svg xmlns="http://www.w3.org/2000/svg"&gt;&lt;defs/&gt;&lt;/svg&gt;'</span>
+<span class="cstat-no" title="statement not covered" >  if (!inlineSvg) {</span>
+<span class="cstat-no" title="statement not covered" >    resultSvg =</span>
       '&lt;?xml version="1.0" encoding="UTF-8"?&gt;' +
       '&lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" ' +
       '"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"&gt;' +
       resultSvg
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered">  var $ = cheerio.load(resultSvg, { xmlMode: true })</span>
-<span class="cstat-no" title="statement not covered">  var $combinedSvg = $('svg')</span>
-<span class="cstat-no" title="statement not covered">  var $combinedDefs = $('defs')</span>
-<span class="cstat-no" title="statement not covered">  var stream = new Stream.Transform({ objectMode: true })</span>
+<span class="cstat-no" title="statement not covered" >  var $ = cheerio.load(resultSvg, { xmlMode: true })</span>
+<span class="cstat-no" title="statement not covered" >  var $combinedSvg = $('svg')</span>
+<span class="cstat-no" title="statement not covered" >  var $combinedDefs = $('defs')</span>
+<span class="cstat-no" title="statement not covered" >  var stream = new Stream.Transform({ objectMode: true })</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  stream._transform = <span class="fstat-no" title="function not covered">function transform (file, encoding, cb) {</span></span>
+<span class="cstat-no" title="statement not covered" >  stream._transform = <span class="fstat-no" title="function not covered" >function transform (file, encoding, cb) {</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">    if (file.isStream()) {</span>
-<span class="cstat-no" title="statement not covered">      return cb(new gutil.PluginError('gulp-svgstore', 'Streams are not supported!'))</span>
+<span class="cstat-no" title="statement not covered" >    if (file.isStream()) {</span>
+<span class="cstat-no" title="statement not covered" >      return cb(new gutil.PluginError('gulp-svgstore', 'Streams are not supported!'))</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    if (file.isNull()) <span class="cstat-no" title="statement not covered">return cb()</span></span>
+<span class="cstat-no" title="statement not covered" >    if (file.isNull()) <span class="cstat-no" title="statement not covered" >return cb()</span></span>
 &nbsp;
 &nbsp;
-<span class="cstat-no" title="statement not covered">    var $svg = cheerio.load(file.contents.toString(), { xmlMode: true })('svg')</span>
+<span class="cstat-no" title="statement not covered" >    var $svg = cheerio.load(file.contents.toString(), { xmlMode: true })('svg')</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">    if ($svg.length === 0) <span class="cstat-no" title="statement not covered">return cb()</span></span>
+<span class="cstat-no" title="statement not covered" >    if ($svg.length === 0) <span class="cstat-no" title="statement not covered" >return cb()</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">    var idAttr = path.basename(file.relative, path.extname(file.relative))</span>
-<span class="cstat-no" title="statement not covered">    var viewBoxAttr = $svg.attr('viewBox')</span>
-<span class="cstat-no" title="statement not covered">    var preserveAspectRatioAttr = $svg.attr('preserveAspectRatio')</span>
-<span class="cstat-no" title="statement not covered">    var $symbol = $('&lt;symbol/&gt;')</span>
+<span class="cstat-no" title="statement not covered" >    var idAttr = path.basename(file.relative, path.extname(file.relative))</span>
+<span class="cstat-no" title="statement not covered" >    var viewBoxAttr = $svg.attr('viewBox')</span>
+<span class="cstat-no" title="statement not covered" >    var preserveAspectRatioAttr = $svg.attr('preserveAspectRatio')</span>
+<span class="cstat-no" title="statement not covered" >    var $symbol = $('&lt;symbol/&gt;')</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">    if (idAttr in ids) {</span>
-<span class="cstat-no" title="statement not covered">      return cb(new gutil.PluginError('gulp-svgstore', 'File name should be unique: ' + idAttr))</span>
+<span class="cstat-no" title="statement not covered" >    if (idAttr in ids) {</span>
+<span class="cstat-no" title="statement not covered" >      return cb(new gutil.PluginError('gulp-svgstore', 'File name should be unique: ' + idAttr))</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    ids[idAttr] = true</span>
+<span class="cstat-no" title="statement not covered" >    ids[idAttr] = true</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">    if (!fileName) {</span>
-<span class="cstat-no" title="statement not covered">      fileName = path.basename(file.base)</span>
-<span class="cstat-no" title="statement not covered">      if (fileName === '.' || !fileName) {</span>
-<span class="cstat-no" title="statement not covered">        fileName = 'svgstore.svg'</span>
+<span class="cstat-no" title="statement not covered" >    if (!fileName) {</span>
+<span class="cstat-no" title="statement not covered" >      fileName = path.basename(file.base)</span>
+<span class="cstat-no" title="statement not covered" >      if (fileName === '.' || !fileName) {</span>
+<span class="cstat-no" title="statement not covered" >        fileName = 'svgstore.svg'</span>
       } else {
-<span class="cstat-no" title="statement not covered">        fileName = fileName.split(path.sep).shift() + '.svg'</span>
+<span class="cstat-no" title="statement not covered" >        fileName = fileName.split(path.sep).shift() + '.svg'</span>
       }
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    if (file &amp;&amp; isEmpty) {</span>
-<span class="cstat-no" title="statement not covered">      isEmpty = false</span>
+<span class="cstat-no" title="statement not covered" >    if (file &amp;&amp; isEmpty) {</span>
+<span class="cstat-no" title="statement not covered" >      isEmpty = false</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    $symbol.attr('id', idAttr)</span>
-<span class="cstat-no" title="statement not covered">    if (viewBoxAttr) {</span>
-<span class="cstat-no" title="statement not covered">      $symbol.attr('viewBox', viewBoxAttr)</span>
+<span class="cstat-no" title="statement not covered" >    $symbol.attr('id', idAttr)</span>
+<span class="cstat-no" title="statement not covered" >    if (viewBoxAttr) {</span>
+<span class="cstat-no" title="statement not covered" >      $symbol.attr('viewBox', viewBoxAttr)</span>
     }
-<span class="cstat-no" title="statement not covered">    if (preserveAspectRatioAttr) {</span>
-<span class="cstat-no" title="statement not covered">      $symbol.attr('preserveAspectRatio', preserveAspectRatioAttr)</span>
+<span class="cstat-no" title="statement not covered" >    if (preserveAspectRatioAttr) {</span>
+<span class="cstat-no" title="statement not covered" >      $symbol.attr('preserveAspectRatio', preserveAspectRatioAttr)</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    var attrs = $svg[0].attribs</span>
-<span class="cstat-no" title="statement not covered">    for (var attrName in attrs) {</span>
-<span class="cstat-no" title="statement not covered">      if (attrName.match(/xmlns:.+/)) {</span>
-<span class="cstat-no" title="statement not covered">        var storedNs = namespaces[attrName]</span>
-<span class="cstat-no" title="statement not covered">        var attrNs = attrs[attrName]</span>
+<span class="cstat-no" title="statement not covered" >    var attrs = $svg[0].attribs</span>
+<span class="cstat-no" title="statement not covered" >    for (var attrName in attrs) {</span>
+<span class="cstat-no" title="statement not covered" >      if (attrName.match(/xmlns:.+/)) {</span>
+<span class="cstat-no" title="statement not covered" >        var storedNs = namespaces[attrName]</span>
+<span class="cstat-no" title="statement not covered" >        var attrNs = attrs[attrName]</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">        if (storedNs !== undefined) {</span>
-<span class="cstat-no" title="statement not covered">          if (storedNs !== attrNs) {</span>
-<span class="cstat-no" title="statement not covered">            gutil.log(gutil.colors.red(</span>
+<span class="cstat-no" title="statement not covered" >        if (storedNs !== undefined) {</span>
+<span class="cstat-no" title="statement not covered" >          if (storedNs !== attrNs) {</span>
+<span class="cstat-no" title="statement not covered" >            gutil.log(gutil.colors.red(</span>
               attrName + ' namespace appeared multiple times with different value.' +
               ' Keeping the first one : "' + storedNs +
               '".\nEach namespace must be unique across files.'
             ))
           }
         } else {
-<span class="cstat-no" title="statement not covered">          for (var nsName in namespaces) {</span>
-<span class="cstat-no" title="statement not covered">            if (namespaces[nsName] === attrNs) {</span>
-<span class="cstat-no" title="statement not covered">              gutil.log(gutil.colors.yellow(</span>
+<span class="cstat-no" title="statement not covered" >          for (var nsName in namespaces) {</span>
+<span class="cstat-no" title="statement not covered" >            if (namespaces[nsName] === attrNs) {</span>
+<span class="cstat-no" title="statement not covered" >              gutil.log(gutil.colors.yellow(</span>
                 'Same namespace value under different names : ' +
                   nsName +
                   ' and ' +
@@ -576,44 +578,43 @@ module.exports = <span class="fstat-no" title="function not covered">function (c
               ))
             }
           }
-<span class="cstat-no" title="statement not covered">          namespaces[attrName] = attrNs;</span>
+<span class="cstat-no" title="statement not covered" >          namespaces[attrName] = attrNs;</span>
         }
       }
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    var $defs = $svg.find('defs')</span>
-<span class="cstat-no" title="statement not covered">    if ($defs.length &gt; 0) {</span>
-<span class="cstat-no" title="statement not covered">      $combinedDefs.append($defs.contents())</span>
-<span class="cstat-no" title="statement not covered">      $defs.remove()</span>
+<span class="cstat-no" title="statement not covered" >    var $defs = $svg.find('defs')</span>
+<span class="cstat-no" title="statement not covered" >    if ($defs.length &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >      $combinedDefs.append($defs.contents())</span>
+<span class="cstat-no" title="statement not covered" >      $defs.remove()</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    $symbol.append($svg.contents())</span>
-<span class="cstat-no" title="statement not covered">    $combinedSvg.append($symbol)</span>
-<span class="cstat-no" title="statement not covered">    cb()</span>
+<span class="cstat-no" title="statement not covered" >    $symbol.append($svg.contents())</span>
+<span class="cstat-no" title="statement not covered" >    $combinedSvg.append($symbol)</span>
+<span class="cstat-no" title="statement not covered" >    cb()</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered">  stream._flush = <span class="fstat-no" title="function not covered">function flush (cb) {</span></span>
-<span class="cstat-no" title="statement not covered">    if (isEmpty) <span class="cstat-no" title="statement not covered">return cb()</span></span>
-<span class="cstat-no" title="statement not covered">    if ($combinedDefs.contents().length === 0) {</span>
-<span class="cstat-no" title="statement not covered">      $combinedDefs.remove()</span>
+<span class="cstat-no" title="statement not covered" >  stream._flush = <span class="fstat-no" title="function not covered" >function flush (cb) {</span></span>
+<span class="cstat-no" title="statement not covered" >    if (isEmpty) <span class="cstat-no" title="statement not covered" >return cb()</span></span>
+<span class="cstat-no" title="statement not covered" >    if ($combinedDefs.contents().length === 0) {</span>
+<span class="cstat-no" title="statement not covered" >      $combinedDefs.remove()</span>
     }
-<span class="cstat-no" title="statement not covered">    for (var nsName in namespaces) {</span>
-<span class="cstat-no" title="statement not covered">      $combinedSvg.attr(nsName, namespaces[nsName])</span>
+<span class="cstat-no" title="statement not covered" >    for (var nsName in namespaces) {</span>
+<span class="cstat-no" title="statement not covered" >      $combinedSvg.attr(nsName, namespaces[nsName])</span>
     }
-<span class="cstat-no" title="statement not covered">    var file = new gutil.File({ path: fileName, contents: new Buffer($.xml()) })</span>
-<span class="cstat-no" title="statement not covered">    this.push(file)</span>
-<span class="cstat-no" title="statement not covered">    cb()</span>
+<span class="cstat-no" title="statement not covered" >    var file = new gutil.File({ path: fileName, contents: new Buffer($.xml()) })</span>
+<span class="cstat-no" title="statement not covered" >    this.push(file)</span>
+<span class="cstat-no" title="statement not covered" >    cb()</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered">  return stream;</span>
+<span class="cstat-no" title="statement not covered" >  return stream;</span>
 }
 &nbsp;
 &nbsp;</pre></td></tr>
-</tbody></table></pre>
+</table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 17:04:06 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 21:01:34 GMT+0000 (UTC)</div>
 </div>
-
-
-</body></html>
+</body>
+</html>
